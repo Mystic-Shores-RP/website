@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to unscalablegamingdevs</title>
 
-    <!-- Include Tailwind CSS -->
-    <script src="https://cdn.jsdelivr.net/npm/tailwindcss@3.0.24/dist/tailwind.min.js"></script>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Include Flowbite CSS -->
+    <!-- Flowbite CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/flowbite@1.0.6/dist/flowbite.min.css" rel="stylesheet" />
+
+    <style>
+        /* Ensures dark mode is enabled */
+        body {
+            background-color: #2d3748; /* Tailwind's gray-800 equivalent */
+        }
+    </style>
 
 </head>
 
@@ -19,17 +26,16 @@
     <!-- Main container for the splash page -->
     <div class="flex justify-center items-center h-screen">
 
-        <!-- Centered content with a box -->
+        <!-- Centered content box -->
         <div class="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-lg">
 
             <!-- Title section -->
             <h1 class="text-4xl font-extrabold text-center text-blue-500 mb-6">Welcome to unscalablegamingdevs</h1>
             <p class="text-xl text-center mb-8">Explore our services and select the one that suits you best!</p>
 
-            <!-- Buttons for services (Flowbite buttons) -->
+            <!-- Buttons for services -->
             <div class="space-y-4">
 
-                <!-- Service Buttons -->
                 <a href="/service1" class="w-full text-center py-3 px-6 bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 transition ease-in-out duration-200">FiveM</a>
                 <a href="/service2" class="w-full text-center py-3 px-6 bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 transition ease-in-out duration-200">GMod</a>
                 <a href="/service3" class="w-full text-center py-3 px-6 bg-blue-600 rounded-lg hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 transition ease-in-out duration-200">Minecraft</a>
@@ -41,7 +47,7 @@
 
     </div>
 
-    <!-- Include Flowbite JS -->
+    <!-- Flowbite JS -->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@1.0.6/dist/flowbite.min.js"></script>
 
 </body>
