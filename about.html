@@ -9,8 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@1.6.1/dist/flowbite.min.css" rel="stylesheet" />
     <style>
         body {
-            background-color: #333;
+            background: linear-gradient(45deg, #2f2f2f, #1c1c1c);
             color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header {
@@ -20,13 +23,22 @@
 
         footer {
             background-color: #222;
-            padding: 10px;
+            padding: 20px;
             text-align: center;
+            margin-top: auto;
         }
 
         .btn-custom {
             background-color: #4CAF50;
             color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -36,22 +48,22 @@
     <!-- Header Section -->
     <header>
         <div class="container mx-auto text-center">
-            <h1 class="text-3xl font-bold text-white">Unscalable Gaming Devs</h1>
-            <nav class="mt-4">
-                <ul class="flex justify-center space-x-6">
-                    <li><a href="index.html" class="text-white">Home</a></li>
-                    <li><a href="about.html" class="text-white">About</a></li>
-                    <li><a href="services.html" class="text-white">Services</a></li>
-                    <li><a href="contact.html" class="text-white">Contact</a></li>
+            <h1 class="text-4xl font-bold text-white">Unscalable Gaming Devs</h1>
+            <nav class="mt-6">
+                <ul class="flex justify-center space-x-8">
+                    <li><a href="index.html" class="text-white hover:text-gray-400">Home</a></li>
+                    <li><a href="about.html" class="text-white hover:text-gray-400">About</a></li>
+                    <li><a href="services.html" class="text-white hover:text-gray-400">Services</a></li>
+                    <li><a href="contact.html" class="text-white hover:text-gray-400">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="container mx-auto my-8 text-center">
-        <h2 class="text-2xl font-semibold">About Us</h2>
-        <p class="mt-4 text-lg text-gray-400">We are a team of passionate game developers dedicated to building immersive and scalable gaming experiences.</p>
+    <main class="container mx-auto my-16 text-center">
+        <h2 class="text-3xl font-semibold">About Us</h2>
+        <p class="mt-4 text-lg text-gray-400">We are a team of passionate game developers dedicated to building immersive and scalable gaming experiences. Our goal is to push the boundaries of game development, providing quality and creativity to every project.</p>
     </main>
 
     <!-- Footer Section -->
