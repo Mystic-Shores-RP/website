@@ -1,1 +1,63 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveM Basic - Payment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <style>
+        html {
+            background-color: #1a1a1a;
+            color: #f5f5f5;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen bg-gray-900">
+    <header class="w-full bg-gray-800 py-4 shadow-md">
+        <div class="container mx-auto text-center">
+            <h1 class="text-2xl font-bold text-gray-100">FiveM Basic</h1>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-6 px-4">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h2 class="text-xl font-semibold text-gray-100 mb-4">Choose Your Payment Option</h2>
+            <p class="text-gray-300 mb-6">Select a script or task to pay for, and proceed with the secure payment process.</p>
+
+            <div class="space-y-6">
+                <!-- Script Payment Option -->
+                <div class="bg-gray-700 p-4 rounded-md shadow">
+                    <h3 class="text-lg font-bold text-gray-100">Pay by Script</h3>
+                    <p class="text-gray-300 mb-4">Purchase individual scripts for your FiveM server.</p>
+                    <div class="text-center">
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1QihX6D7TZxzBImgKO84g26X"
+                            publishable-key="pk_live_51Qbp09D7TZxzBImghaEp9Q9JJ6g35lAbO3QyViwcMm1nij2o5sXessjDZ7lulKTH5w0AKQMcjO3tVyWodR8d2Rzq00NIxWuSzp">
+                        </stripe-buy-button>
+                    </div>
+                </div>
+
+                <!-- Task Payment Option -->
+                <div class="bg-gray-700 p-4 rounded-md shadow">
+                    <h3 class="text-lg font-bold text-gray-100">Pay by Task</h3>
+                    <p class="text-gray-300 mb-4">Get custom tasks completed for your FiveM server.</p>
+                    <div class="text-center">
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1QihX6D7TZxzBImgKO84g26X"
+                            publishable-key="pk_live_51Qbp09D7TZxzBImghaEp9Q9JJ6g35lAbO3QyViwcMm1nij2o5sXessjDZ7lulKTH5w0AKQMcjO3tVyWodR8d2Rzq00NIxWuSzp">
+                        </stripe-buy-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w-full bg-gray-800 py-4 mt-6">
+        <div class="container mx-auto text-center">
+            <p class="text-gray-400">&copy; 2025 FiveM Basic. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
